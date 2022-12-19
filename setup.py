@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 # Strip version and long description
 with open('VERSION') as version_file:
@@ -17,7 +17,7 @@ setup(
     url='https://github.com/Lardis1/seleniumextensions',
     license='MIT',
     keywords="selenium, page object model, pom, pages, page factory",
-    packages=find_packages('seleniumextensions'),
+    packages=['seleniumextensions'],
     install_requires=[
         'selenium',
     ]
